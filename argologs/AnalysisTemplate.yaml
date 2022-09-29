@@ -11,7 +11,7 @@ spec:
       provider:
         opsmx:
           gateUrl: https://argoqa-helm.isd-dev.opsmx.net
-          application: elkappbyqa
+          application: elkapplicationbyqa
           baselineStartTime: "2022-09-16T11:29:46.915Z"
           canaryStartTime: "2022-09-19T11:29:46.915Z"" 
           user: admin
