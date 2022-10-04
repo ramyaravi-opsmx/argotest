@@ -16,7 +16,7 @@ spec:
           gateUrl: https://isd-dev.argo-dev.opsmx.net/
           application: final-tests
           user: admin
-          lifetimeMinutes: "6"
+          lifetimeMinutes: "3"
           threshold:
             pass: 80
             marginal: 60
