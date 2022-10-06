@@ -26,6 +26,6 @@ spec:
           globalLogTemplate: logtemp
           services:
           - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
-            baselineMetricScope: "argocd,{{args.baseline-hash}},final-tests"
-            canaryMetricScope: "argocd,{{args.canary-hash}},final-tests"
+            baselineMetricScope: "argocd,{{args.baseline-hash}},demoapp-issuegen"
+            canaryMetricScope: "argocd,{{args.canary-hash}},demoapp-issuegen"
             metricTemplateName: "PrometheusMetricTemplate"
