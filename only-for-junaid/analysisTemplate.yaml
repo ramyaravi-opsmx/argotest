@@ -17,8 +17,6 @@ spec:
           application: final-tests
           user: admin
           lifetimeMinutes: "3"
-          baselineStartTime: "2022-10-04T10:58:00Z"
-          canaryStartTime: "2022-10-04T10:58:00Z"
           threshold:
             pass: 80
             marginal: 60
