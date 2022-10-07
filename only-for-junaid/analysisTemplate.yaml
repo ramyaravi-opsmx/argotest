@@ -27,3 +27,4 @@ spec:
             baselineMetricScope: "argocd,{{args.baseline-hash}}"
             canaryMetricScope: "argocd,{{args.canary-hash}}"
             metricTemplateName: "missionfailmetric"
+            metricTemplateVersion: "v2.0"
