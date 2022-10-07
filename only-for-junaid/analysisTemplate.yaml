@@ -27,3 +27,6 @@ spec:
             baselineLogScope: ".*{{args.baseline-hash}}.*"
             canaryLogScope: ".*{{args.canary-hash}}.*"
             logTemplateName: "logtemp"
+            baselineMetricScope: "argocd,{{args.baseline-hash}},demoapp-issuegen"
+            canaryMetricScope: "argocd,{{args.canary-hash}},demoapp-issuegen"
+            metricTemplateName: "PrometheusMetricTemplate"
