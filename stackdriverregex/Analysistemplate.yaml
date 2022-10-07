@@ -1,0 +1,29 @@
+kind: AnalysisTemplate
+apiVersion: argoproj.io/v1alpha1
+metadata:
+  name: oes-analysis-for-stackregex
+spec:
+  args:
+    - name: canary-hash
+    - name: baseline-hash
+  metrics:
+    - name: oes-analysis-for-stackregex
+      count: 1
+      initialDelay: 30s
+      provider:
+        opsmx:
+          profile: opsmx-profile-v3
+          gateUrl: https://isd-dev.argo-dev.opsmx.net/
+          application: stackregexapp
+          user: admin
+          lifetimeMinutes: 6
+          baselineStartTime: "2022-09-16T06:10:00Z"
+          canaryStartTime: "2022-09-19T08:06:00Z"
+          threshold:
+            pass: 80
+            marginal: 60
+          services:
+          - logTemplateName: stacktemplateregex
+            logScopeVariables: "resource.labels.pod_name"
+            baselineLogScope: "sd-ss1-canary-*-d7c92"
+            canaryLogScope: "sd-ss1-canary-*-d7c92"
