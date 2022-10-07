@@ -16,7 +16,7 @@ spec:
           gateUrl: https://isd-dev.argo-dev.opsmx.net/
           application: stacknoregexapp
           user: admin
-          lifetimeMinutes: 6
+          lifetimeHours: "0.05"
           baselineStartTime: "2022-09-16T06:10:00Z"
           canaryStartTime: "2022-09-19T08:06:00Z"
           threshold:
