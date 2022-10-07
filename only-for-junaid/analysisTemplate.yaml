@@ -27,5 +27,5 @@ spec:
           services:
           - metricScopeVariables: "${namespace_key},${pod_key},${app_name}"
             baselineMetricScope: "argocd,{{args.baseline-hash}},demoapp-issuegen"
-            canaryMetricScope: "isd-dev,{{args.baseline-hash}},demoapp-issuegen"
+            canaryMetricScope: "argocd,{{args.baseline-hash}},demoapp-issuegen"
             metricTemplateName: "PrometheusMetricTemplate"
