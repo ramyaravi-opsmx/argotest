@@ -27,3 +27,7 @@ spec:
             baselineLogScope: ".*{{args.baseline-hash}}.*"
             canaryLogScope: ".*{{args.baseline-hash}}.*"
             logTemplateName: "logtemp"
+          - metricScopeVariables: "${namespace_key},${pod_key}"
+            baselineMetricScope: "argocd,{{args.baseline-hash}}"
+            canaryMetricScope: "argocd,{{args.canary-hash}}"
+            metricTemplateName: "missionfailmetric"
