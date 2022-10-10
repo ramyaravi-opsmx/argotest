@@ -12,6 +12,7 @@ spec:
       initialDelay: 30s
       provider:
         opsmx:
+          profile: opsmx-profile-v3
           gateUrl: https://argoqa-helm.isd-dev.opsmx.net/
           application: stacknoregexapp
           user: admin
